@@ -45,6 +45,7 @@ a::selection:hover {
 
 ul {
   list-style: none;
+  text-transform: capitalize;
 }
 
 a {
