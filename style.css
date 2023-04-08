@@ -247,7 +247,7 @@ a:hover {
 }
 .project h1 {
   font-weight: 400 !important;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 textarea {
   background-color: transparent;
@@ -267,6 +267,7 @@ textarea {
   font-weight: 700;
   font-size: 6rem;
 }
+
 .contact__main p {
   font-weight: 500;
   font-size: 1.8rem;
@@ -276,6 +277,7 @@ textarea {
 }
 .contact__p {
   width: 500px;
+  margin-top: 40px;
 }
 .contact__main a {
   border-bottom: 1px solid var(--green);
