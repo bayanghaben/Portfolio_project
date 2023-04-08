@@ -116,7 +116,7 @@ body {
 }
 h1 {
   font-weight: 700;
-  font-size: 8rem;
+  font-size: 6rem;
 }
 .hero__title span {
   border-bottom: solid 6px var(--green);
@@ -245,6 +245,10 @@ a:hover {
   border-top: none;
   width: 500px;
 }
+.project h1 {
+  font-weight: 400 !important;
+  font-size: 5rem;
+}
 textarea {
   background-color: transparent;
   border-bottom: 1px solid #4d4d4d;
@@ -261,7 +265,7 @@ textarea {
 }
 .contact__main h1 {
   font-weight: 700;
-  font-size: 8rem;
+  font-size: 6rem;
 }
 .contact__main p {
   font-weight: 500;
@@ -388,8 +392,9 @@ textarea {
   }
   h1 {
     font-weight: 600;
-    font-size: 6rem;
+    font-size: 5rem;
   }
+
   .skills__title,
   .skills__headline {
     font-weight: 600;
