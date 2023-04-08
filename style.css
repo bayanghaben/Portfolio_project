@@ -43,7 +43,7 @@ a::selection:hover {
   align-items: center;
 }
 
-ul {
+ul a {
   list-style: none;
   text-transform: capitalize;
 }
@@ -76,6 +76,47 @@ body {
   font-size: 32px;
   line-height: 32px;
   letter-spacing: -0.444444px;
+  animation: Color 4s linear infinite;
+  -webkit-animation: Color infinite ease-in-out infinite;
+}
+
+@keyframes Color {
+  0% {
+    color: var(--green);
+  }
+
+  33% {
+    color: black;
+  }
+  66% {
+    color: var(--white);
+  }
+}
+
+@-moz-keyframes Color {
+  0% {
+    color: var(--green);
+  }
+
+  33% {
+    color: var(--light-gray);
+  }
+  66% {
+    color: var(--white);
+  }
+}
+
+@-webkit-keyframes Color {
+  0% {
+    color: var(--green);
+  }
+
+  33% {
+    color: var(--light-gray);
+  }
+  66% {
+    color: var(--white);
+  }
 }
 
 .nav-el {
@@ -134,7 +175,7 @@ h1 {
   line-height: 2.8rem;
 }
 .hero a,
-.card a {
+.card__a {
   border-bottom: 1px solid var(--green);
   font-weight: 700;
   font-size: 1.6rem;
@@ -188,7 +229,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   border-top: 1px solid #4d4d4d;
-  margin-top: 200px;
+  margin-top: 100px;
   padding-top: 70px;
   font-weight: 300;
   font-size: 3rem;
@@ -202,13 +243,13 @@ a:hover {
 }
 
 .footer {
-  margin-top: 200px;
+  margin-top: 100px;
 
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 91px;
+  margin-bottom: 50px;
   border-top: 1px solid #4d4d4d;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 .footer__logo {
   font-weight: 700;
@@ -223,7 +264,7 @@ a:hover {
 
 /* Contact form */
 .contact__body {
-  margin-top: 150px;
+  margin-top: 100px;
   /* height: 50rem; */
 }
 .contact__main {
@@ -248,7 +289,7 @@ a:hover {
 }
 .project h1 {
   font-weight: 400 !important;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 textarea {
   background-color: transparent;
@@ -277,7 +318,7 @@ textarea {
   text-align: justify;
 }
 .contact__p {
-  width: 500px;
+  width: auto;
   margin-top: 40px;
 }
 .contact__main a {
@@ -411,6 +452,9 @@ textarea {
     font-size: 4rem;
     text-align: justify;
   }
+  .contact__p {
+    width: auto;
+  }
 }
 @media only screen and (max-width: 480px) {
   .flex {
@@ -507,14 +551,17 @@ textarea {
   }
   .contact__main h1 {
     font-weight: 600;
-    font-size: 8rem;
+    font-size: 4rem;
     text-align: center;
   }
   .contact__main p {
     font-weight: 500;
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
     text-align: justify;
+  }
+  .contact__p {
+    width: auto;
   }
 }
 
@@ -529,9 +576,18 @@ textarea {
   object-fit: cover;
   filter: brightness(0.6);
 }
+.project__wrapper {
+  justify-content: space-between;
+}
 .project {
   margin-top: 30px;
-  margin-bottom: 50px;
+}
+.project__items {
+  margin-top: 100px;
+}
+.card__a {
+  width: 150px;
+  align-self: flex-end;
 }
 .c__title {
   text-align: center;
